@@ -1,0 +1,97 @@
+/* File:  style.css
+GUI Assignment: Creating Your First Web Page
+    Content should include interesting information, working links,
+    images, tables and basic styling with CSS
+
+Sofya Chow, Sofya_Chow@student.uml.edu
+Last Updated On: Sept 9, 2021 */
+
+/* CSS allows you to customize each element, id or class selector and can be labeled as the tag itself */
+
+body {
+  background-color: white;
+}
+
+/* Here, I declare the color of a Header 1 text to have these attributes */
+h1 {
+  color: rgb(107, 99, 99);
+  font-size: 50px;
+  font-family: Serif;
+  text-align: center;
+}
+
+summary {
+  color: rgb(107, 99, 99);
+  font-size: 30px;
+  font-family: Serif;
+  text-align: center;
+  /* display: inline-block; */
+  letter-spacing: 9px;
+}
+
+p {
+  color: rgb(107, 99, 99);
+  font-size: 20px;
+  font-family: Didot;
+  text-align: left;
+}
+
+/* list-style-position: outside will start each line of a list item to be aligned vertically */
+ul {
+  color: rgb(107, 99, 99);
+  font-size: 20px;
+  font-family: Didot;
+  list-style-position: outside;
+  text-align: left;
+}
+
+table {
+  color: rgb(107, 99, 99);
+  font-size: 20px;
+  font-family: monospace;
+  text-align: center;
+  width: 100%;
+}
+
+/* height:auto will resize the image if the browser size changes */
+img {
+  width: 100%;
+  height: auto;
+}
+
+img.foodimage {
+  width: 330px;
+  height: 400px;
+}
+
+/* This class selector defines the whole grid to consist of three columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* An instance of an id selector
+   Needed to expand on the p selector because of the padding,
+   left and right padding of 100px */
+#aboutme {
+  color: rgb(107, 99, 99);
+  font-size: 20px;
+  font-family: Didot;
+  text-align: center;
+  padding: 0px 100px 0px 100px;
+
+}
+
+/* Migrated the style attributes from the copied verification icons to style.css */
+.verification {
+  border: 0;
+  width: 88px;
+  height: 31px;
+  float:right;
+}
