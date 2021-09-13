@@ -4,7 +4,10 @@ GUI Assignment: Creating Your First Web Page
     images, tables and basic styling with CSS
 
 Sofya Chow, Sofya_Chow@student.uml.edu
-Last Updated On: Sept 9, 2021 */
+Last Updated On: Sept 9, 2021 
+Resources: https://www.w3schools.com/w3css/defaulT.asp
+           https://stackoverflow.com/questions/10813581/replace-the-expand-icon-of-html5-details-tag
+*/
 
 /* CSS allows you to customize each element, id or class selector and can be labeled as the tag itself */
 
@@ -25,8 +28,16 @@ summary {
   font-size: 30px;
   font-family: Serif;
   text-align: center;
-  /* display: inline-block; */
+  display: inline-block;
   letter-spacing: 9px;
+}
+
+/* The > symbol selects all <summary> elements that are children of a <details> element 
+   and places the icon after the summary text */
+details > summary::after {
+  font-size: 20px;
+  content: ' ▼'; 
+  /* content: '↓'; */
 }
 
 p {
