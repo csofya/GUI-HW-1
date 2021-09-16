@@ -36,8 +36,13 @@ summary {
    and places the icon after the summary text */
 details > summary::after {
   font-size: 20px;
-  content: ' ▼'; 
-  /* content: '↓'; */
+  /* content: ' ▼';  */
+  content: 'EXPAND';
+}
+
+/* When the summary element is opened, the content (text) is changed */
+details[open] > summary::after {
+  content: 'UNEXPAND';
 }
 
 p {
@@ -76,7 +81,7 @@ img.foodimage {
 }
 
 /* This class selector defines the whole grid to consist of three columns */
-.grid-container {
+.column-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
